@@ -46,7 +46,7 @@ public class Mob {
         this.nameLabel.setFont(new Font("Arial",25));
         this.nameLabel.setStyle("-fx-text-fill: #ff0000");
 
-        this.nextSpawnLabel = new Label("Next spawn: " + this.getNextSpawnTime().format(Main.currentTimeParser));
+        this.nextSpawnLabel = new Label("Next spawn: " + this.getNextSpawnTime().format(Main.timeParser));
         this.nextSpawnLabel.setFont(new Font("Arial",15));
         this.nextSpawnLabel.setStyle("-fx-text-fill: #dabb00");
 
@@ -126,7 +126,7 @@ public class Mob {
         this.timeTillNextSpawnLabel.setText("Seconds to spawn: " + this.getTimeTillNextSpawn());
     }
     public void updateNextSpawnTimeLabel(){
-        this.nextSpawnLabel.setText("Next spawn: " + this.getNextSpawnTime().format(Main.currentTimeParser));
+        this.nextSpawnLabel.setText("Next spawn: " + this.getNextSpawnTime().format(Main.timeParser));
     }
 
 
